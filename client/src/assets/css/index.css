@@ -1,0 +1,72 @@
+body{
+    background: url("../media/images/index.webp") no-repeat center center fixed;
+    background-size: cover;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;  
+    justify-content: space-evenly;
+}
+
+form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    padding-top:6rem;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+label, input{
+    display: block;
+    margin-bottom: 1rem;
+    color: white;
+}
+input[type="submit"]{
+    border: none;
+    color: goldenrod;
+    background-color: rgba(187, 187, 181, 0.596);
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius:0.5rem;
+}
+input[type="submit"]:hover{
+    color: rgb(32, 114, 207);
+    background-color: rgba(78, 78, 78, 0.692);
+
+}
+label{
+    font-size: 1.5rem;
+}
+
+input[type=text]{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-bottom: black solid;
+    color: goldenrod;
+    font-family: 'Slackey', cursive;
+    font-size: 1.5rem;
+    border-radius:0.5rem;
+}
+
+::placeholder{
+    color: goldenrod;
+}

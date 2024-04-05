@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Group 34 - Drunkopoly</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/board.css" />
+    <link rel="stylesheet" href="./assets/css/color.css" />
+
+    <script src="assets/js/config.js"></script>
+
+    <script src="assets/js/data-connector/error-handler.js"></script>
+    <script src="assets/js/data-connector/api-communication-abstractor.js"></script>
+    <script src="assets/js/data-connector/local-and-global-storage-abstractor.js"></script>
+
+    <script src="assets/js/initialiser.js"></script>
+    <script src="assets/js/game/initialiser.js"></script>
+    <script src="assets/js/game/main.js"></script>
+    <script src="assets/js/dataFetch.js"></script>
+    <script src="assets/js/utilities.js"></script>
+    <script src="assets/js/game/updateBoard.js"></script>
+    <script src="assets/js/game/dice.js"></script>
+    <script src="assets/js/game/playerActions.js"></script>
+    <script src="assets/js/game/auction.js"></script>
+    <script src="assets/js/game/popups.js"></script>
+    <script src="assets/js/game/popup/classes.js"></script>
+</head>
+
+<body>
+    <main>
+      <!-- Tittle / header-->
+      <section>
+        <h1>Drunkopoly</h1>
+        <!-- Vlaams gewest img + dice -->
+        <div id="overview">
+          <div>
+            <img
+              src="assets/media/images/drunkopoly.png"
+              alt="drunkopoly"
+              id="logo"
+            />
+            <div></div>
+            <div></div>
+            <p ></p>
+          </div>
+          <!-- Show owned properties -->
+          <div id="properties">
+            <h3>Your properties</h3>
+            <p>name: hoerstraat houseprice: 5000$   playerrent: 50$</p>
+            <p>name: hoerstraat houseprice: 5000$   playerrent: 50$</p>
+            <p>name: hoerstraat houseprice: 5000$   playerrent: 50$</p>
+        
+          </div>
+          <a id="rules" href="rules-page.html" target="_blank">rules page:</a>
+        </div>
+
+            <!-- Playing board -->
+
+            <div id="board_display">
+                <section class="go">
+                    <h3>go</h3>
+                </section>
+                <section class="street">
+                    <div class="color"></div>
+                    <div class="name">
+                        <h3>location</h3>
+                    </div>
+                </section>
+                <section class="community_chest">
+                    <h3>community chest</h3>
+                </section>
+                <section class="railroad">
+                    <h3>rail road</h3>
+                </section>
+                <section class="street">
+                    <div class="color"></div>
+                    <div class="name">
+                        <h3>location</h3>
+                    </div>
+                </section>
+                <section class="street">
+                    <div class="color"></div>
+                    <div class="name">
+                        <h3>location</h3>
+                    </div>
+                </section>
+                <section class="utility">
+                    <h3>utility</h3>
+                </section>
+                <section class="street">
+                    <div class="color"></div>
+                    <div class="name">
+                        <h3>location</h3>
+                    </div>
+                </section>
+                <section class="street">
+                    <div class="color"></div>
+                    <div class="name">
+                        <h3>location</h3>
+                    </div>
+                </section>
+                <section class="chance">
+                    <h3>chance card</h3>
+                </section>
+
+                <section class="jail">
+                    <h3>prison</h3>
+                </section>
+            </div>
+        </section>
+        <aside>
+            <section>
+                <h2>Player 1<span>#1</span></h2>
+                <p>Cash:</p>
+                <p>Properties amount:</p>
+                <p>Value Properties:</p>
+                <div>
+                    <button type="button">View Properties</button>
+                    <button type="button">View Player Position</button>
+                </div>
+            </section>
+            <section>
+                <h2>Player 1<span>#2</span></h2>
+                <p>Cash:</p>
+                <p>Properties amount:</p>
+                <p>Value Properties:</p>
+                <div>
+                    <button type="button">View Properties</button>
+                    <button type="button">View Player Position</button>
+                </div>
+            </section>
+            <section>
+                <h2>Player 1<span>#3</span></h2>
+                <p>Cash:</p>
+                <p>Properties amount:</p>
+                <p>Value Properties:</p>
+                <div>
+                    <button type="button">View Properties</button>
+                    <button type="button">View Player Position</button>
+                </div>
+            </section>
+            <section>
+                <h2>Player 1</h2>
+                <p>Cash:</p>
+                <p>Properties amount:</p>
+                <p>Value Properties:</p>
+                <div>
+                    <button type="button">View Properties</button>
+                    <button type="button">View Player Position</button>
+                </div>
+            </section>
+            <section>
+                <h2>Player 1</h2>
+                <p>Cash:</p>
+                <p>Properties amount:</p>
+                <p>Value Properties:</p>
+                <div>
+                    <button type="button">View Properties</button>
+                    <button type="button">View Player Position</button>
+                </div>
+            </section>
+        </aside>
+        <div id="popupcontainer" class="hidden"></div>
+    </main>
+</body>
+
+</html>

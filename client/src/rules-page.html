@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Group 34 - Drunkopoly</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/rules-page.css" />
+
+    <script src="assets/js/config.js"></script>
+
+    <script src="assets/js/data-connector/error-handler.js"></script>
+    <script src="assets/js/data-connector/api-communication-abstractor.js"></script>
+    <script src="assets/js/data-connector/local-and-global-storage-abstractor.js"></script>
+
+    <script src="assets/js/initialiser.js"></script>
+
+    <script src="assets/js/lobby/initialiser.js"></script>
+    <script src="assets/js/lobby/dataFetch.js"></script>
+    <script src="assets/js/lobby/lobby.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Rules Drunkopoly</h1>
+    </header>
+    <main>
+        <ul>
+            <li>Rules player</li>
+            <li>Each player starts with $1500</li>
+        </ul>
+
+        <ul>
+            <li>Rules banker</li>
+            <li>The banker is the auctioneer</li>
+            <li>The banker keeps his funds separate from the bank</li>
+        </ul>
+
+        <ul>
+            <li>Rules bank</li>
+            <li>The bank holds title deed cards, barrels and breweries</li>
+            <li>The bank pays salaries and bonuses</li>
+            <li>The bank sells and auctions properties and gives the correct title deed cards</li>
+            <li>The bank sells barrels and breweries</li>
+            <li>The bank loans money on mortgages</li>
+            <li>The bank collects taxes, fines, loans and interest</li>
+        </ul>
+
+        <ul>
+            <li>Rules play</li>
+            <li>Place your token on the go corner</li>
+            <li>Next throwing player is the player on the left of the previous thrower</li>
+            <li>Multiple players can rest on the same space at the same time</li>
+            <li>You may be entitled to buy the real estate or other properties</li>
+            <li>Pay the bill when the property is already sold</li>
+            <li>Pay taxes</li>
+            <li>Take a chance or community card</li>
+            <li>If you roll double, the throwing player can throw again. If the player throws doubles 3 times after each other,
+                 the player goes to jail</li>
+            <li>When passing the “go” field, the player receives $200</li>
+        </ul>
+
+        <ul>
+            <li>Rules for buying</li>
+            <li>If the player lands on a property, he can buy it from the bank for the printed price</li>
+            <li>If you don’t want to buy the property, it gets sold to the highest bidder</li>
+            <li>Anyone can participate in the auction, even the player who didn’t want to buy the property in the first
+                place</li>
+            <li>Bidding prices may start from any price</li>
+        </ul>
+
+        <ul>
+            <li>Rules for paying the bill</li>
+            <li>When landing on an owned property, the player pays the other player the bill for drinking at his/her property</li>
+            <li>If the property is mortgaged, there is no bill to be paid</li>
+            <li>If a player owns all colours of a specific street, the bill is doubled if there are no barrel build on any
+                of the properties</li>
+            <li>If a player owns all colours of a specific street, he may build barrels and breweries to increase the bills</li>
+            <li>The owner may not be able to collect the money if the next player has thrown before asking for the money
+            </li>
+        </ul>
+
+        <ul>
+            <li>Rules for chance and community chest</li>
+            <li>When landing on each of the spaces, the player takes the top card of the space he landed on</li>
+            <li>Follow the instructions on the card</li>
+            <li>Only the “Get out of jail free” card can be kept by the player</li>
+        </ul>
+
+        <ul>
+            <li> Rules for income taxes</li>
+            <li>There are 2 options:</li>
+            <li>The player pays the bank $200</li>
+            <li>The player pays the bank 10% of what the player is worth (this includes cash in hand, printed prices of
+                mortgaged and unmortgaged properties and cost prices of all owned buildings)</li>
+            <li>The player can choose what option he takes</li>
+        </ul>
+
+        <ul>
+            <li>Rules jail</li>
+            <li>You go to jail when:</li>
+            <li>You land on the “go to jail” space</li>
+            <li>You draw the card “go to jail”</li>
+            <li>You throw doubles 3 times in a row</li>
+            <li>You can’t collect your salary and bill when sent to jail</li>
+            <li>How to bail:</li>
+            <li>Throw doubles in any of the next 3 turns, if succeeded you can move those spaces</li>
+            <li>Use the “get out of jail free” card</li>
+            <li>Purchase the “get out of jail free” card from another player</li>
+            <li>Pay the bank $50 and roll the dice</li>
+        </ul>
+
+        <ul>
+            <li>Rules free parking</li>
+            <li>This is a rest spot, no money is awarded</li>
+        </ul>
+
+        <ul>
+            <li>Rules barrels</li>
+            <li>Only when a full street is owned, the player can start building barrels</li>
+            <li>The barrels has to be spread evenly, meaning there can’t be 2 Barrels on 1 property and 0 on another</li>
+            <li>If there are no Barrels left, the player has to wait for another player to sell their barrels</li>
+            <li>The player can still collect double when there is no barrel on 1 property but there are barrels on the
+                other properties</li>
+        </ul>
+
+        <ul>
+            <li>Rules breweries</li>
+            <li>When a player has 4 barrels, he can exchange it for a brewery</li>
+            <li>Only 1 brewery can be built on 1 property</li>
+        </ul>
+
+        <ul>
+            <li>Rules building shortage</li>
+            <li>When there are no more barrels, the player has to wait on another player to sell theirs</li>
+            <li>If 2 players want to buy at once and there are not enough barrels, they may be auctioned</li>
+        </ul>
+
+        <ul>
+            <li>Rules selling property</li>
+            <li>Spaces where you can’t build on, can be sold privately at anytime</li>
+            <li>Before a player can sell a card to another player, he has to sell all barrels and breweries</li>
+            <li>Barrels and breweries will be sold at any time for half the price to the bank</li>
+            <li>All barrels must be sold evenly</li>
+        </ul>
+
+        <ul>
+            <li>Rules Mortgage</li>
+            <li>Unimproved properties can be mortgaged through the bank</li>
+            <li>Before an improved property can be sold, the player has to sell all the barrels and breweries first</li>
+            <li>If the player wants to unmortgage a property, he has to pay 10% interest on top of the original price</li>
+            <li>The mortgage property can be sold to another player</li>
+            <li>Same rules apply for the buyer of the mortgage card, like if he was the player who mortgaged the property
+            </li>
+        </ul>
+
+        <ul>
+            <li>Rules Bankruptcy</li>
+            <li>You are declared bankrupt if you can’t pay another player or the bank with everything you got (cash,
+                properties, barrels, breweries)</li>
+        </ul>
+
+        <ul>
+            <li>Rules miscellaneous</li>
+            <li>A player can only take a loan from the bank</li>
+        </ul>
+
+        <ul>
+            <li>Rules for short game</li>
+            <li>Each player gets 3 random title deed cards</li>
+            <li>You only need 3 barrels instead of 4 to build a brewery</li>
+            <li>If in jail you must exit the next turn with 1 of the 3 options</li>
+            <li>Income tax is always $200</li>
+            <li>End of game: game ends when one player is bankrupt</li>
+        </ul>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="index.html">Back to titlescreen!</a></li>
+        </ul>
+    </footer>
+
+    <div class="errorMessages">
+        <p></p>
+    </div>
+</body>
+
+</html>

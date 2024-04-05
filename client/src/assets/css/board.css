@@ -1,0 +1,398 @@
+/* html */
+
+html {
+  height: 100%;
+  background: url("../media/images/background.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  /*     background-color: #BFDBAE;*/
+  font-family: "Slackey", cursive;
+}
+
+body {
+  height: 100%;
+}
+
+/* main */
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* section */
+
+section {
+  width: 85%;
+}
+
+section h1 {
+  /* sketchy methode om h1 centeren */
+  /* de aside neemt de linker kant in += 25% daarom  */
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+/* parent / container of the properties + map  */
+
+section #overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* come back later to fix height of the section div */
+  height: 47.5%;
+}
+
+#logo{
+  width: 27.5%;
+}
+/* overview map + dice  */
+
+section #overview > div {
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  /* background-color: pink; */
+
+}
+
+section #rolledDices {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.popup img {
+  width: 100%;
+  height: 100%;
+}
+
+section #rolledDices img {
+  width: 10%;
+  height: 20%;
+}
+
+div section div {
+  width: 11.625rem;
+}
+
+/* your properties width */
+
+section #overview div + div  {
+  width: 20%;
+  /* background-color: blue; */
+}
+
+.fullpopup .bid div {
+  margin-bottom: 0.5rem;
+}
+
+aside section div {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  margin: 0.5rem;
+}
+
+/* dice block zodat het volgende lijn gaat */
+section #overview > div > div  {
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  /* width: 40rem; */
+}
+
+section #overview div > div img{
+  height: 4rem;
+  width: 4rem;
+  /* width: 40rem; */
+}
+
+/* playing bord */
+
+#board_display {
+  /* afstand van de div erboven */
+  margin-top: 2.5%;
+
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  /* de hoogte van het bord zetten */
+  height: 40%;
+  /* de breedte van het bord */
+  width: 95%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+aside section {
+  background-color: rgba(236, 236, 236, 0.534);
+  margin-top: 1rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  margin-right: auto;
+  direction: ltr;
+  height: 10rem;
+  width: 10rem;
+}
+
+#board_display section {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+}
+
+/* hoek items van het bord zijn groter + centeren */
+
+.go,
+.jail,
+.free_parking,
+.go_to_jail {
+  /* flex item van in het bord zijn width mee geven. */
+  width: 12.5%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+
+  margin: 0.1rem;
+}
+
+.street {
+  /* deze div flexen zodat de color en naam boven elkaar kunnen staan */
+  width: 10%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.1rem;
+  align-items: center;
+  align-items: flex-end;
+}
+
+.name {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.name h3 {
+  width: 100%;
+}
+
+aside h2 {
+  padding: 0.4rem;
+}
+
+.name h2 {
+  font-weight: bold;
+  padding: 2%;
+}
+.railroad,
+.utility,
+.community_chest,
+.luxury_tax,
+.chance,
+.tax_income {
+  width: 10%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.1rem;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+/* aside */
+
+aside {
+  direction: rtl;
+  width: 15%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+aside h2 span {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  margin-left: 0.5rem;
+}
+
+aside section:nth-child(1) span {
+  color: rgb(153, 130, 0);
+  background-color: gold;
+}
+
+aside section:nth-child(2) span {
+  color: rgb(128, 128, 128);
+  background-color: silver;
+}
+
+aside section:nth-child(3) span {
+  color: #975c22;
+  background-color: #cd7f32;
+}
+
+aside section div button {
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: rgba(40, 155, 231, 0.63);
+  border: 0.01rem solid rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+/* scroll bar CSS */
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffb62e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(9, 180, 17);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 225, 92);
+}
+/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
+.hidden {
+  visibility: hidden;
+}
+
+/* popup */
+.fullpopup .bid {
+  background-color: lightgrey;
+  padding: 0.5rem;
+}
+
+.popup h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.fullpopup .bid h3 {
+  background-color: lightgreen;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+.popup p {
+  margin-bottom: 2rem;
+}
+
+.fullpopup .bid p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fullpopup .bid input {
+  width: 50%;
+}
+
+.popup {
+  position: absolute;
+  width: 45%;
+  border-radius: 0.4rem;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+.close {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.popup ul {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popupnoflex {
+  justify-content: center;
+}
+
+.popupflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup button {
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: white;
+  font-family: "Slackey", cursive;
+}
+
+#popupcontainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  color: white;
+}
+.hide:hover {
+  color: black;
+}
+#rules {
+  height: 7.5%;
+  width: 7.5%;
+  text-align: center; 
+  text-decoration: none;
+  color: black;
+  line-height: 155%;
+  border-radius: 0.3rem;
+  background-color: rgba(40, 155, 231, 0.63);
+  border: 0.01rem solid rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+#properties{
+  overflow-y: scroll;
+  overflow-y: hidden;
+}
+#properties section {
+  background-color: rgba(255, 255, 255, 0.623);
+  padding: 0.75rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0.2rem;
+  border-radius: 0.5rem;  
+
+}

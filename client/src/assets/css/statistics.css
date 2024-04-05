@@ -1,0 +1,52 @@
+body {
+    background: url("../media/images/Fremont-Brewing-Barrels-CreditFremont-Feature.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+header {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Slackey', cursive;
+}
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Slackey', cursive;
+    margin-bottom: 2rem;
+}
+
+main ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main li {
+    padding: 0.5rem;
+    display: flex;
+}
+
+main li:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+main li:nth-child(even) {
+    background-color: lightcoral;
+}
+
+footer {
+    width: 90%;
+    text-align: right;
+}

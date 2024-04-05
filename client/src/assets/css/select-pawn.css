@@ -1,0 +1,72 @@
+body {
+    background: url("../media/images/pawns/14-draught-beer-taps.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+header {
+    margin-bottom: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin-bottom: 3rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Slackey', cursive;
+    color: white;
+    text-align: center;
+}
+
+main li {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1rem;
+    background-color: white;
+    border: white solid 0.25rem;
+    border-radius: 0.5rem;
+    background-size: contain;
+    cursor: pointer;
+}
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+main div {
+    width: 100%;
+    text-align: right;
+}
+
+main a {
+    background-color: green;
+    border: solid green;
+    border-radius: 1rem;
+    font-family: 'Slackey', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.selected {
+    border: solid green 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.already-picked {
+    border: solid red 0.25rem;
+    border-radius: 0.5rem;
+}

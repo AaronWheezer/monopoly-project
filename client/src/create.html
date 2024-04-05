@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Group 34 - Drunkopoly</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/screen.css" />
+		<link rel="stylesheet" href="assets/css/joining-game.css"/>
+		
+		<script src="assets/js/config.js"></script>
+
+		<script src="assets/js/data-connector/error-handler.js"></script>
+		<script src="assets/js/data-connector/api-communication-abstractor.js"></script>
+		<script src="assets/js/data-connector/local-and-global-storage-abstractor.js"></script>
+
+		<script src="assets/js/initialiser.js"></script>
+
+		<script src="assets/js/lobby/setup/create.js"></script>
+		<script src="assets/js/dataFetch.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Create a game</h1>
+		</header>
+		<main>
+			<form action="./select-pawn.html" method="GET" >
+				<label for="playerRange">4 players</label>
+				<input
+					type="range"
+					min="2"
+					max="8"
+					value="4"
+					name="playerRange"
+					class="slider"
+					id="playerRange"
+				/>
+				<div> 
+				<input
+				type="checkbox"
+				class=""
+				title="join a game if one exists"
+				id="join"
+				name="join"
+				data-version="join"
+			/>
+			<label for="join">Join an existing game if possible</label>
+		</div>
+				<button
+					type="submit"
+					value="create game"
+					title="Create game"
+					id="create"
+					data-version="create"
+				>Create game</button>
+		
+
+			</form>
+		</main>
+			 
+	<footer>
+		<div class="backbuttonsclass">
+			<a href="./start.html">
+			 go back
+			</a> 
+		</div>
+	</footer>
+		<div class="errormessages">
+			<p></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background: url("../media/images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    background-color: rgba(192,192,192,0.8);
+    border-radius: 0.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color:  white;
+}
+
+main ul {
+    margin-bottom: 2rem;
+}
+
+footer li {
+    text-align: center;
+}
+
+main li:nth-child(1) {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+main li:nth-child(n+2) {
+    color: black;
+    list-style-type: circle;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
